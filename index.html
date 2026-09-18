@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavanderia 24h no Jaçanã — dentro do Posto Alê | Lume Lavanderia</title>
+<meta name="description" content="Lavanderia self service aberta 24 horas, na Rua Benjamin Pereira, 346, dentro do Posto Alê, Jaçanã, São Paulo. Nota 5,0 no Google. Fale no WhatsApp.">
+<meta property="og:title" content="Lume Lavanderia — self service 24h no Jaçanã">
+<meta property="og:description" content="Aberta 24 horas, dentro do Posto Alê. Nota 5,0 no Google (13 avaliações).">
+<meta property="og:image" content="imagens/lavanderia.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo:#484878; --luz:#F5B93C; --branco:#FFFFFF; --noite:#151A2E;
+  --pedra:#E8E9EE; --texto:#39405A; --linha:rgba(72,72,120,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--branco);color:var(--noite);font:400 17px/1.62 'Karla',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Sora',system-ui,sans-serif;font-weight:700;line-height:1.14;letter-spacing:-.02em}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+.prova{background:var(--noite);color:#fff;padding:10px 0;font:500 13.5px/1 'Karla',sans-serif}
+.prova .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.prova .n{color:#FFCE6B}
+
+.hero{padding:54px 0 26px;background:linear-gradient(180deg,#FBFBFD 0%,#FFFFFF 70%)}
+/* ===== MOMENTO MEMORÁVEL: o selo 24h que acende ===== */
+.selo{display:inline-flex;align-items:center;gap:14px;background:var(--noite);color:#fff;border-radius:14px;padding:14px 20px;position:relative;overflow:hidden}
+.selo .lamp{width:44px;height:44px;border-radius:50%;background:var(--luz);flex:none;position:relative;box-shadow:0 0 0 0 rgba(245,185,60,.55);animation:acende 1.05s ease-out .25s both}
+@keyframes acende{
+  0%{box-shadow:0 0 0 0 rgba(245,185,60,.55);opacity:.35}
+  55%{box-shadow:0 0 0 18px rgba(245,185,60,0);opacity:1}
+  100%{box-shadow:0 0 0 0 rgba(245,185,60,0);opacity:1}
+}
+.selo .t1{display:block;font:600 12px/1 'Karla',sans-serif;letter-spacing:.16em;color:#B9BCDA}
+.selo .t2{display:block;font:700 20px/1.2 'Sora',sans-serif;margin-top:5px}
+@media (prefers-reduced-motion:reduce){.selo .lamp{animation:none;opacity:1;box-shadow:none}}
+
+h1{font-size:clamp(31px,5vw,52px);margin:28px 0 16px;max-width:17ch}
+.sub{color:var(--texto);font-size:18.5px;max-width:52ch}
+.acoes{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border-radius:12px;font:600 16.5px/1 'Karla',sans-serif;text-decoration:none;border:1px solid transparent}
+.btn-a{background:var(--indigo);color:#fff}
+.btn-a:hover{background:#3C3C68}
+.btn-b{border-color:var(--linha);color:var(--noite);background:#fff}
+.btn-b:hover{border-color:var(--indigo)}
+.hero-img{margin-top:38px;border-radius:16px;overflow:hidden;border:1px solid var(--linha)}
+.hero-img img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hero-img figcaption{padding:13px 18px;font-size:13.5px;color:#6B7191;background:#FAFAFC;border-top:1px solid var(--linha)}
+
+section{padding:66px 0;border-top:1px solid var(--linha)}
+h2{font-size:clamp(25px,3.6vw,36px);max-width:22ch;margin-bottom:14px}
+.intro{color:#4D5470;max-width:56ch;margin-bottom:34px}
+
+.prateleira{display:grid;grid-template-columns:1.35fr 1fr;gap:18px}
+.box{border:1px solid var(--linha);border-radius:16px;padding:26px;background:#FCFCFE}
+.box h3{font-size:20px;margin-bottom:8px}
+.box p{color:var(--texto);font-size:15.5px}
+.box.destaque{background:linear-gradient(180deg,#F7F6FB,#FFF);border-color:rgba(72,72,120,.28)}
+@media(max-width:820px){.prateleira{grid-template-columns:1fr}}
+
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.fotos figure{border-radius:14px;overflow:hidden;border:1px solid var(--linha)}
+.fotos img{aspect-ratio:1;object-fit:cover;width:100%}
+@media(max-width:760px){.fotos{grid-template-columns:1fr 1fr}}
+
+.onde{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.dados{border:1px solid var(--linha);border-radius:16px;overflow:hidden}
+.dados div{display:flex;justify-content:space-between;gap:14px;padding:15px 18px;border-bottom:1px solid var(--linha);font-size:16px}
+.dados div:last-child{border-bottom:0}
+.dados span:first-child{color:#6B7191;font-size:14px}
+.dados span:last-child{font-weight:600;text-align:right}
+@media(max-width:820px){.onde{grid-template-columns:1fr}}
+
+.fecho{background:linear-gradient(180deg,#FBFBFD,#F3F3F8)}
+footer{padding:30px 0;font-size:14px;color:#6B7191}
+footer a{text-decoration:none;border-bottom:1px solid var(--linha)}
+
+.zap{position:fixed;z-index:60;bottom:calc(24px + env(safe-area-inset-bottom));left:20px;right:auto;
+  background:#25D366;color:#0B141A;min-height:56px;padding:0 22px;border-radius:999px;display:inline-flex;align-items:center;gap:10px;
+  font:600 15.5px/1 'Karla',sans-serif;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.zap svg{width:22px;height:22px;flex:none}
+.zap svg path{fill:#0B141A}
+@media(min-width:900px){.zap{left:auto;right:24px}}
+@media(max-width:600px){.acoes .btn{width:100%}}
+</style>
+</head>
+<body>
+
+<div class="prova">
+  <div class="wrap">
+    <span><span class="n">★ 5,0</span> no Google (13 avaliações)</span>
+    <span>Rua Benjamin Pereira, 346 — Jaçanã</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="selo">
+      <span class="lamp" aria-hidden="true"></span>
+      <span>
+        <span class="t1">SELF SERVICE</span>
+        <span class="t2">Aberta 24 horas, todos os dias</span>
+      </span>
+    </div>
+    <h1>Limpeza que renova — a qualquer hora, no Jaçanã.</h1>
+    <p class="sub">Lavanderia self service dentro do Posto Alê, na Rua Benjamin Pereira, 346. Aberta 24 horas: você lava quando der na sua rotina.</p>
+    <div class="acoes">
+      <a class="btn btn-a" href="https://wa.me/5511923628524?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Lume%20e%20quero%20saber%20sobre%20a%20lavagem%20self%20service.">Perguntar sobre a lavagem</a>
+      <a class="btn btn-b" href="#onde">Onde fica o Posto Alê</a>
+    </div>
+    <figure class="hero-img">
+      <img src="imagens/lavanderia.jpg" alt="Lavanderia self service Lume, no Jaçanã, dentro do Posto Alê">
+      <figcaption>Lume Lavanderia — dentro do Posto Alê, Jaçanã</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Por que aqui dá certo</h2>
+    <p class="intro">Três motivos que fazem diferença na semana de quem mora perto.</p>
+    <div class="prateleira">
+      <div class="box destaque">
+        <h3>Aberta 24 horas</h3>
+        <p>Trabalhou até tarde? Saiu cedo? É só chegar. A lavanderia não fecha — nem de madrugada, nem no fim de semana.</p>
+      </div>
+      <div class="box">
+        <h3>No caminho de casa</h3>
+        <p>Fica dentro do Posto Alê, na Rua Benjamin Pereira, 346. Aproveita que já passa ali.</p>
+      </div>
+      <div class="box">
+        <h3>Você mesmo opera</h3>
+        <p>Self service: escolhe a máquina, acompanha o ciclo e leva a roupa pronta no mesmo dia.</p>
+      </div>
+      <div class="box">
+        <h3>Limpeza que renova</h3>
+        <p>Máquinas de lavar e secar para a roupa do dia a dia, cama, banho e peças maiores.</p>
+      </div>
+    </div>
+    <div class="dados" style="margin-top:20px">
+      <div><span>Ciclo de lavagem</span><span>a partir de R$ 15,90</span></div>
+      <div><span>Funcionamento</span><span>24 horas, todos os dias</span></div>
+      <div><span>Onde</span><span>dentro do Posto Alê — Rua Benjamin Pereira, 346</span></div>
+    </div>
+    <div class="acoes"><a class="btn btn-a" href="https://wa.me/5511923628524?text=Ol%C3%A1%21%20Quero%20saber%20o%20valor%20do%20ciclo%20e%20como%20funciona%20na%20Lume.">Confirmar valor do ciclo</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O espaço</h2>
+    <p class="intro">Fotos do Instagram da própria lavanderia.</p>
+    <div class="fotos">
+      <figure><img src="imagens/espaco-1.jpg" alt="Máquinas da lavanderia self service Lume, no Jaçanã"></figure>
+      <figure><img src="imagens/espaco-2.jpg" alt="Ambiente interno da Lume Lavanderia"></figure>
+      <figure><img src="imagens/espaco-3.jpg" alt="Área de lavagem da Lume, aberta 24 horas"></figure>
+    </div>
+    <div class="acoes"><a class="btn btn-a" href="https://wa.me/5511923628524?text=Ol%C3%A1%21%20Vou%20passar%20na%20Lume%20lavar%20roupa.">Vou passar na Lume</a></div>
+  </div>
+</section>
+
+<section id="onde">
+  <div class="wrap">
+    <h2>Onde fica</h2>
+    <div class="onde">
+      <div>
+        <p class="intro" style="margin-bottom:20px">Dentro do Posto Alê, na Rua Benjamin Pereira, 346 — Jaçanã, Zona Norte de São Paulo. Aberta 24 horas, todos os dias.</p>
+        <a class="btn btn-a" href="https://wa.me/5511923628524?text=Ol%C3%A1%21%20Queria%20confirmar%20a%20localiza%C3%A7%C3%A3o%20da%20Lume%20no%20Posto%20Al%C3%AA.">Confirmar a localização</a>
+      </div>
+      <div class="dados">
+        <div><span>Endereço</span><span>Rua Benjamin Pereira, 346<br>dentro do Posto Alê — Jaçanã</span></div>
+        <div><span>Funcionamento</span><span>24 horas, todos os dias</span></div>
+        <div><span>Serviço</span><span>self service</span></div>
+        <div><span>WhatsApp</span><span>(11) 92362-8524</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fecho">
+  <div class="wrap">
+    <h2>Qualquer hora é hora.</h2>
+    <p style="color:#4D5470;max-width:48ch;margin-bottom:24px">Manda mensagem se tiver dúvida sobre máquina, tempo de ciclo ou o que dá para lavar.</p>
+    <a class="btn btn-a" href="https://wa.me/5511923628524?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Lume%20e%20quero%20lavar%20roupa.">Falar com a Lume</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Lume Lavanderia Self Service — Rua Benjamin Pereira, 346 (dentro do Posto Alê) · Jaçanã, São Paulo<br>
+    WhatsApp <a href="https://wa.me/5511923628524">(11) 92362-8524</a> · Instagram <a href="https://instagram.com/lumelavanderia" target="_blank" rel="noopener">@lumelavanderia</a>
+  </div>
+</footer>
+
+<a class="zap" href="https://wa.me/5511923628524?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Lume%20e%20quero%20lavar%20roupa.">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-4.9-4.4-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.3.3c-.1.1-.2.3-.1.5.2.4.8 1.4 1.7 2.2 1.1 1 2 1.3 2.4 1.4.2.1.4 0 .5-.1l.8-1c.2-.2.4-.2.6-.1l2.1 1c.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg>
+  WhatsApp
+</a>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LaundryService",
+"name":"Lume Lavanderia Self Service",
+"telephone":"+5511923628524",
+"address":{"@type":"PostalAddress","streetAddress":"Rua Benjamin Pereira, 346","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},
+"openingHours":"Mo-Su 00:00-23:59",
+"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"13"},
+"sameAs":["https://instagram.com/lumelavanderia"]}
+</script>
+</body>
+</html>
